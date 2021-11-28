@@ -6,13 +6,20 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/style.css">
+<!--    <script type="text/javascript" src="https://cdnjs.com/libraries/mathjs"></script>-->
 </head>
 <body>
 <h1>Real Calculator</h1>
 
-<input name="text" type="text" id="text"/>
-<button id="btn">btn</button>
-<p id="length-label"></p>
+<input class="number-input" type="number" placeholder="Enter number..." id="number-1"/>
+<div id="operator-controls">
+    <button class="btn" data-operator="+">+</button>
+    <button class="btn" data-operator="-">-</button>
+    <button class="btn" data-operator="*">x</button>
+    <button class="btn" data-operator="\">:</button>
+</div>
+<input class="number-input" type="number" placeholder="Enter number..." id="number-2"/>
+<p id="result-label"></p>
 
 <script src="assets/main.js"></script>
 </body>
