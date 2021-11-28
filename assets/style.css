@@ -1,8 +1,11 @@
 * {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
-#text {
-    width:500px;
+.number-input {
+    width:300px;
     resize: vertical;
     padding:15px;
     border-radius:15px;
@@ -13,7 +16,8 @@
     margin-right: auto;
 }
 
-#btn {
+.btn {
+    width: 3px;
      align-items: center;
      background-color: #FFFFFF;
      border: 1px solid rgba(0, 0, 0, 0.1);
@@ -24,12 +28,10 @@
      cursor: pointer;
      display: inline-flex;
      font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-     font-size: 16px;
+     font-size: 12px;
      font-weight: 600;
      justify-content: center;
-     line-height: 1.25;
-     min-height: 3rem;
-     padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+     padding: 5px 12px;
      position: relative;
      text-decoration: none;
      transition: all 250ms;
@@ -37,27 +39,37 @@
      -webkit-user-select: none;
      touch-action: manipulation;
      vertical-align: baseline;
-     width: auto;
-     margin-left: auto;
-     margin-right: auto;
+     /*margin-left: auto;*/
+     /*margin-right: auto;*/
 }
 
-#btn:hover,
-#btn:focus {
+.btn:hover,
+.btn:focus {
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     color: rgba(0, 0, 0, 0.65);
 }
 
-#btn:hover {
+.btn:hover {
     transform: translateY(-1px);
 }
 
-#btn:active {
+.btn:active {
     background-color: #F0F0F1;
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
     color: rgba(0, 0, 0, 0.65);
     transform: translateY(0);
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 
